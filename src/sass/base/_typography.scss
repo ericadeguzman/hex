@@ -1,0 +1,24 @@
+/* ==== TYPOGRAPHY STYLES ==== */
+:root {
+  font-family: $font-family;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+a,
+.link {
+  font-weight: 500;
+  color: $link-color;
+  text-decoration: inherit;
+}
+a:hover,
+.link:hover {
+  color: $link-color;
+}
+
+/* === FORM === */
+label {
+  color: $link-color;
+  margin-bottom: 0;
+}

@@ -1,0 +1,10 @@
+/* ==== FOOTER STYLES ==== */
+.footer {
+  text-align: center;
+  @include respond(mobile) {
+
+  }
+  @include respond(not-mobile) {
+
+  }
+}

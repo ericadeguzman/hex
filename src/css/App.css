@@ -1,0 +1,140 @@
+/* === COLOR VARIABLES ==== */
+/*
+0 - 600px:    Mobile
+600 - 900px:  Tablet Portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :    Big desktop
+*/
+/*
+Breakpoint argument choices:
+-- mobile
+-- tab-port
+-- tab-land
+-- big-desktop
+*/
+/* ==== TYPOGRAPHY STYLES ==== */
+:root {
+  font-family: "Inconsolata", monospace; }
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1; }
+
+a,
+.link {
+  font-weight: 500;
+  color: #816547;
+  text-decoration: inherit; }
+
+a:hover,
+.link:hover {
+  color: #816547; }
+
+/* === FORM === */
+label {
+  color: #816547;
+  margin-bottom: 0; }
+
+/*==== NAVIGATION SYTLES ==== */
+.navigation {
+  padding: 0;
+  margin: 0; }
+  @media (min-width: 753px) {
+    .navigation {
+      margin-top: 1%;
+      display: flex;
+      flex-direction: row;
+      padding-left: 0; } }
+
+.navigation li {
+  list-style: none; }
+
+.navigation a {
+  color: #000;
+  font-weight: normal;
+  display: block; }
+
+.navigation button {
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  font-family: "Inconsolata", monospace;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out; }
+  @media (max-width: 752px) {
+    .navigation button {
+      width: 100vw;
+      padding: 10px; } }
+  @media (min-width: 753px) {
+    .navigation button {
+      padding: 100px; } }
+
+@media (min-width: 753px) {
+  .navigation button:hover {
+    transform: translate(3em, 0);
+    -webkit-transform: translate(3em, 0);
+    -moz-transform: translate(3em, 0);
+    -o-transform: translate(3em, 0);
+    -ms-transform: translate(3em, 0); } }
+
+/* ==== FOOTER STYLES ==== */
+.footer {
+  text-align: center; }
+
+/* ==== HOME STYLES ==== */
+.homeContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px; }
+
+.messageBox textarea:focus,
+.messageBox input:focus {
+  background-color: rgba(129, 101, 71, 0.2); }
+
+.horizontalList li {
+  list-style: circle;
+  margin-right: 50px; }
+
+@media (min-width: 753px) {
+  .homeContainer {
+    flex-direction: row;
+    max-width: 900px; } }
+
+@media (min-width: 753px) {
+  .homeIntro {
+    margin-right: 60px; } }
+
+@media (min-width: 753px) {
+  .messageBox {
+    margin-top: 50px; } }
+
+@media (min-width: 753px) {
+  .wrapper {
+    min-width: 753px;
+    max-width: 753px; } }
+
+/* ==== FORM INPUT STYLE ==== */
+input {
+  margin-top: 2px; }
+
+/* ==== COLOR GAME STYLES ==== */
+.colorAnswers {
+  font-size: 18px; }
+
+.colorBox {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px; }
+
+.colorButton {
+  padding: 2px;
+  margin-right: 4px; }

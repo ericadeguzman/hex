@@ -1,0 +1,48 @@
+/* ==== HOME STYLES ==== */
+.homeContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+.messageBox textarea:focus,
+.messageBox input:focus
+{
+  background-color: $primary-color;
+}
+
+.horizontalList {
+    li {
+      list-style:circle;
+      margin-right: 50px;
+    }
+}
+
+.homeContainer {
+  @include respond(not-mobile) {
+    flex-direction: row;
+    max-width: 900px;
+  }
+}
+.homeIntro {
+  @include respond(not-mobile) {
+    margin-right: 60px;
+  }
+}
+.messageBox {
+  @include respond(not-mobile) {
+    margin-top: 50px;
+  }
+}
+
+
+.wrapper{
+  @include respond(not-mobile){
+    min-width: 753px;
+    max-width: 753px;
+  }
+}
