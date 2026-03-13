@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "compile:sass": "node-sass src/sass/app.scss -o src/css/ -w"
+    "compile:sass": "sass src/sass/app.scss src/css/ -w"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -24,7 +24,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
-    "node-sass": "^8.0.0",
+    "sass": "^1.69.0",
     "nodemon": "^2.0.20",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"

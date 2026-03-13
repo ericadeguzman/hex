@@ -3,7 +3,7 @@ import Nav from "../Nav";
 import Footer from '../Footer';
 
 //styles
-import '../css/App.css';
+import '../sass/app.scss';
 
 
 function RootLayout() {
